@@ -32,7 +32,6 @@ const produceMessages = async () => {
     [messages[i], messages[j]] = [messages[j], messages[i]]; 
   }
 
-  
   await producer.send({
     topic: 'cdp-events',
     messages,

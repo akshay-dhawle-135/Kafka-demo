@@ -10,7 +10,7 @@ const consumer = kafka.consumer({ groupId: 'cdp-group' });
 
 const consumeMessages = async () => {
   await consumer.connect();
-  await consumer.subscribe({ topic: 'cdp-events', fromBeginning: true });
+  await consumer.subscribe({ topic: 'cdp-events', fromBeginning: true }); // this may change in app
 
   const batchSize = 100;
   const batches = {}; 
