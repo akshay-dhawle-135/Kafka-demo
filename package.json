@@ -1,0 +1,17 @@
+{
+  "name": "kafka-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "send": "node src/producer.js",
+    "receive": "node src/consumer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "kafkajs": "^2.2.4"
+  }
+}
